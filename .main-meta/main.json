@@ -4,8 +4,8 @@
     "content": {
         "metaDataVersion": "1.3.0",
         "name": "com.microchip.mcu8.mplabx.project.avr16eb32-getting-started-with-tcf-mplab-mcc",
-        "version": " ",
-        "displayName": "",
+        "version": "1.0.0",
+        "displayName": "Getting Started with Timer/Counter Type F (TCF)",
         "projectName": "avr16eb32-getting-started-with-tcf-mplab-mcc",
         "shortDescription": "This repository has examples of the Bare-Metal and MCC Melody generated source code for the new AVR EB family's TCF.",
         "ide": {
@@ -19,12 +19,12 @@
             }
         ],
         "dfp": {
-            "name": "",
-            "semverRange": ""
+            "name": "AVR-Ex_DFP",
+            "semverRange": "^2.7.184"
         },
         "configurator": {
-            "name": "",
-            "semverRange": ""
+            "name": "MCC",
+            "semverRange": ">=5.5.7"
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -36,9 +36,13 @@
                 "versionRange": "*"
             }
         },
-        "author": "Arild Rodland",
-        "peripherals": [],
-        "keywords": [],
+        "author": "Bogdan-Alexandru Mariniuc",
+        "peripherals": ["Timer"],
+        "keywords": [
+            "Getting Started",
+            "MCC",
+            "Timer"
+    ],
         "additionalData": {
             "longDescription": {
                 "metaDataVersion": "1.0.0",

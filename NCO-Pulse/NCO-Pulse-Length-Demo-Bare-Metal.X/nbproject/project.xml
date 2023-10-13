@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>com.microchip.mplab.nbide.embedded.makeproject</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/make-project/1">
+            <name>NCO-Pulse-Length-Demo-Bare-Metal</name>
+            <name>NCO-Fixed-Duty-Cycle-Demo-Bare-Metal</name>
+            <name>avr-eb-tcf-app-v1.3</name>
+            <name>avr-eb-tcf-app-v1.2</name>
+            <name>avr-eb-tcf-app-v1.1</name>
+            <name>avr-eb-tcf-app</name>
+            <name>avr-eb-tcf-header-file-v1.3</name>
+            <name>avr-eb-tcf-header-file-v1.2</name>
+            <name>avr-eb-tcf-header-file-v1.1</name>
+            <name>avr-eb-tcf-header-file</name>
+            <creation-uuid>dba1edcc-b6ba-4dbb-9515-678858c8d33b</creation-uuid>
+            <make-project-type>0</make-project-type>
+            <c-extensions>c</c-extensions>
+            <cpp-extensions/>
+            <header-extensions>h</header-extensions>
+            <asminc-extensions/>
+            <sourceEncoding>ISO-8859-1</sourceEncoding>
+            <make-dep-projects/>
+            <sourceRootList>
+                <sourceRootElem>.</sourceRootElem>
+            </sourceRootList>
+            <confList>
+                <confElem>
+                    <name>free</name>
+                    <type>2</type>
+                </confElem>
+                <confElem>
+                    <name>pro</name>
+                    <type>2</type>
+                </confElem>
+            </confList>
+            <formatting>
+                <project-formatting-style>false</project-formatting-style>
+            </formatting>
+        </data>
+    </configuration>
+</project>
