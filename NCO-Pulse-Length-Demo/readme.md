@@ -17,10 +17,43 @@ More details and code examples on the AVR16EB32 can be found at the following li
 ## Hardware Used
 - AVR16EB32 Cnano [(AVR16EB32)](insert url link here)(insert url link here)
 
+
+## Functionality
+After we initialize the peripheral clock and the TCF, we call in an infinite loop the NCO_Pulse_Length_Demo function.
+
+The purpose of this function is to change the pulse length of the waveform which  the timer outputs on the pin. We first start the timer  with a pulse length of 2 clock-cycles and then run up to the maximum of 128 clock-cycles. 
+
+At the end we stop the timer and reset the pulse length to default.
+
+```
+void NCO_Pulse_Length_Demo(void)
+{
+   TCF0_Start(); 
+   _delay_us(20);
+   TCF0_NCO_PulseLengthSet(TCF_WGPULSE_CLK2_gc);
+   _delay_us(20);
+   TCF0_NCO_PulseLengthSet(TCF_WGPULSE_CLK4_gc);
+   _delay_us(20);
+   TCF0_NCO_PulseLengthSet(TCF_WGPULSE_CLK8_gc);
+   _delay_us(20);
+   TCF0_NCO_PulseLengthSet(TCF_WGPULSE_CLK16_gc);
+   _delay_us(20);
+   TCF0_NCO_PulseLengthSet(TCF_WGPULSE_CLK32_gc);
+   _delay_us(20);
+   TCF0_NCO_PulseLengthSet(TCF_WGPULSE_CLK64_gc);
+   _delay_us(20);
+   TCF0_NCO_PulseLengthSet(TCF_WGPULSE_CLK128_gc);
+   _delay_us(18);
+   TCF0_Stop();
+   TCF0_NCO_PulseLengthSet(TCF_WGPULSE_CLK1_gc);
+}
+
+```
+<br><img src="../images/ncoPlFlowchart.png">
+
 ## Setup
 The AVR16EB32 Cnano Development Board is used as test platform.
 <br><img src="../images/AVR16EB32_Cnano_Board.png">
-
 
 <br>To generate this project using MPLAB X IDE and the MPLAB Code Configurator (MCC Melody, MCC Clasic is not supported on this device), follow the next steps:
 

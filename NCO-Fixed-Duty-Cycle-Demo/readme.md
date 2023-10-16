@@ -17,10 +17,37 @@ More details and code examples on the AVR16EB32 can be found at the following li
 ## Hardware Used
 - AVR16EB32 Cnano [(AVR16EB32)](insert url link here)
 
+
+## Functionality
+After we initialize the peripheral clock and the TCF, we call in an infinite loop the NCO_Fixed_DutyCycle_Demo function.
+
+The purpose of this function is to change the frequency at which the timer operates. We first start the timer with a frequency of 100 Hz and run up until we reach 100 KHz.
+
+At the end we stop the timer and reset the frequency to default.
+
+```
+void NCO_Fixed_DutyCycle_Demo(void)
+{   
+   TCF0_Start();
+   _delay_ms(600);
+   TCF0_CompareSet(TCF0_NCOFD_HZ_TO_INCREMENT(100, 20000000, 1));
+   _delay_ms(60);
+   TCF0_CompareSet(TCF0_NCOFD_HZ_TO_INCREMENT(1000, 20000000, 1));
+   _delay_ms(6);
+   TCF0_CompareSet(TCF0_NCOFD_HZ_TO_INCREMENT(10000, 20000000, 1));
+   _delay_us(600);
+   TCF0_CompareSet(TCF0_NCOFD_HZ_TO_INCREMENT(100000, 20000000, 1));
+   _delay_us(60);
+   TCF0_Stop();
+   TCF0_CompareSet(TCF0_NCOFD_HZ_TO_INCREMENT(10, 20000000, 1));
+}
+
+```
+<br><img src="../images/ncoFixedDutyCycleFlowchart.png">
+
 ## Setup
 The AVR16EB32 Cnano Development Board is used as test platform.
 <br><img src="../images/AVR16EB32_Cnano_Board.svg">
-
 
 <br>To generate this project using MPLAB X IDE and the MPLAB Code Configurator (MCC Melody, MCC Clasic is not supported on this device), follow the next steps:
 
