@@ -41,7 +41,8 @@
         "keywords": [
             "Getting Started",
             "MCC",
-            "Timer"
+            "Timer",
+            "NCO"
     ],
         "additionalData": {
             "longDescription": {
