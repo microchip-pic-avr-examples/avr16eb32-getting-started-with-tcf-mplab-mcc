@@ -13,47 +13,86 @@ More details and code examples on the AVR16EB32 can be found at the following li
 ## Software Used
 - [MPLAB X IDE v6.15 or newer](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide)
 - [AVR-Ex DFP-2.5.184 or newer Device Pack](insert url link here)
+- [XC8 compiler v2.45]
 
 ## Hardware Used
 - AVR16EB32 Cnano [(AVR16EB32)](insert url link here)(insert url link here)
 
+## Setup
+The AVR16EB32 Cnano Development Board is used as test platform.
+<br><img src="../images/AVR16EB32_Cnano_Board.png">
 
 ## Functionality
-After we initialize the peripheral clock and the TCF, we call in an infinite loop the NCO_Pulse_Length_Demo function.
+After  the peripheral clock and the TCF are initialized, the ```NCO_Pulse_Length_Demo``` function is called in an infinite loop. 
 
-The purpose of this function is to change the pulse length of the waveform which  the timer outputs on the pin. We first start the timer  with a pulse length of 2 clock-cycles and then run up to the maximum of 128 clock-cycles. 
+The purpose of this function is to change the pulse length of the waveform which the timer outputs on the pin. The timer is started with a pulse length of 2 clock cycles and then run up to the maximum of 128 clock cycles. 
 
-At the end we stop the timer and reset the pulse length to default.
+1 clock cycle takes 50 ns beacuse the timer is running at 20 MHz. 1 divided by 20 Mhz equals 50 ns.
+
+At the end the timer is stopped and the pulse length is reseted to 1 clock cycle.
 
 ```
 void NCO_Pulse_Length_Demo(void)
 {
-   TCF0_Start(); 
+  /* Enable the TCF */
+    TCF0_Start(); 
+    
+    /* Delay for 20 us */
    _delay_us(20);
+   
+   /* Configure the pulse-length to 2 clock cycles */
    TCF0_NCO_PulseLengthSet(TCF_WGPULSE_CLK2_gc);
+   
+   /* Delay for 20 us */
    _delay_us(20);
+   
+   /* Configure the pulse-length to 4 clock cycles */
    TCF0_NCO_PulseLengthSet(TCF_WGPULSE_CLK4_gc);
+   
+   /* Delay for 20 us */
    _delay_us(20);
+   
+   /* Configure the pulse-length to 8 clock cycles */
    TCF0_NCO_PulseLengthSet(TCF_WGPULSE_CLK8_gc);
+   
+   /* Delay for 20 us */
    _delay_us(20);
+   
+   /* Configure the pulse-length to 6 clock cycles */
    TCF0_NCO_PulseLengthSet(TCF_WGPULSE_CLK16_gc);
+   
+   /* Delay for 20 us */
    _delay_us(20);
+   
+   /* Configure the pulse-length to 32 clock cycles */
    TCF0_NCO_PulseLengthSet(TCF_WGPULSE_CLK32_gc);
+   
+   /* Delay for 20 us */
    _delay_us(20);
+   
+   /* Configure the pulse-length to 64 clock cycles */
    TCF0_NCO_PulseLengthSet(TCF_WGPULSE_CLK64_gc);
+   
+   /* Delay for 20 us */
    _delay_us(20);
+   
+   /* Configure the pulse-length to 128 clock cycles */
    TCF0_NCO_PulseLengthSet(TCF_WGPULSE_CLK128_gc);
+   
+   /* Delay for 20 us */
    _delay_us(18);
+   
+   /* Stop the timer */
    TCF0_Stop();
+   
+   /* Configure the pulse-length to 1 clock cycle */
    TCF0_NCO_PulseLengthSet(TCF_WGPULSE_CLK1_gc);
 }
 
 ```
 <br><img src="../images/ncoPlFlowchart.png">
 
-## Setup
-The AVR16EB32 Cnano Development Board is used as test platform.
-<br><img src="../images/AVR16EB32_Cnano_Board.png">
+
 
 <br>To generate this project using MPLAB X IDE and the MPLAB Code Configurator (MCC Melody, MCC Clasic is not supported on this device), follow the next steps:
 
@@ -123,13 +162,13 @@ The AVR16EB32 Cnano Development Board is used as test platform.
 
 ## Results
 
-Below is illustrated a logic analyzer capture, to help understanding a little bit better how the TCF generates a waveform signal in NCO Pulse-Length mode.
+The logic analyzer capture show how the TCF generates a waveform signal NCO Pulse-Length mode.
 
-<br>Result: TCF is used to generate two output signals with a frequnecy of 125 kHz and pulse-wdth-modulated with a variable duration ranging from 1 clock-cycle up to 128 clock-cycles.
-In this case one clock-cycle takes 50 ns.
+<br>Result: TCF is used to generate two pulse-wdth-modulated output signals with a frequency of 125 kHz and with a variable duration ranging from 1 clock cycle up to 128 clock cycles.
+
 <br><img src="../images/ncoPlResult.png">
 
 
 ## Summary
 
-This example depicted how to create a project in MCC using the TCF peripheral of ARVR16EB32. The TCF was configured to generate two PWM output signals on the default TCF output pins. The pulse length varies between 1 clock-cycle and 128 clock-cylces.The measured output confirms the expected result.
+This example depicted how to create a project in MCC using the TCF peripheral of ARVR16EB32. The TCF was configured to generate two PWM output signals on the default TCF output pins. The pulse length varies between 1 clock cycle and 128 clock cycles. The measured output confirms the expected result.

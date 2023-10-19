@@ -4,8 +4,8 @@
 
 This repository contains examples of MCC Melody generated source code for the new TCF of the AVREB family of devices as described in TBxxxx. There are two applications described in this document. Each application's configuration in MCC Melody is explained step by step and the functionality  is also explained.
 
- * [<strong>Generate Two Constant On-Time PWM Signals in NCO Pulse-Frequency Waveform Generation Mode using the TCF:</strong>](./NCO-Pulse/readme.md) In this use case, configure the TCF to  generate an overflow event on the CMP0 and CMP1 at a fixed frequency while increasing the waveform duty cycle, through all possible lengths. For more details, see [<strong></strong>]()).
-  * [<strong>Generate Two Variable-Frequency Signals in NCO-Fixed Mode using the TCF:</strong>](./NCO-Fixed/readme.md)  [<strong></strong>]() In this case, configure TCF to generate an overflow event on CMP0 and CMP1 on a range of frequencies (from 10 Hz to 100 KHz).
+ * [<strong>Generate Two Constant On-Time PWM Signals in NCO Pulse-Frequency Waveform Generation Mode using the TCF:</strong>](./NCO-Pulse/readme.md) In this use case, the TCF is configured to generate an overflow event on the CMP0 and CMP1 at a fixed frequency while increasing the waveform duty cycle, through all possible lengths. For more details, see [<strong></strong>]()).
+  * [<strong>Generate Two Variable-Frequency Signals in NCO-Fixed Mode using the TCF:</strong>](./NCO-Fixed/readme.md)  [<strong></strong>]() In this case, he TCF is configured to generate an overflow event on CMP0 and CMP1 on a range of frequencies (from 10 Hz to 100 KHz).
  (for more details, see [<strong></strong>]()).
 
 ## Related Documentation
@@ -17,6 +17,7 @@ More details and code examples on the AVR16EB32 can be found at the following li
 ## Software Used
 - [MPLAB X IDE v6.15 or newer](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide)
 - [AVR-Ex DFP-2.5.184 or newer Device Pack](insert url link here)
+- [XC8 compiler v2.45]
 
 ## Hardware Used
 - AVR16EB32 Curiosity Nano  [(AVR16EB32)](insert url link here)
