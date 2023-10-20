@@ -15,6 +15,7 @@ More details and code examples on the AVR16EB32 can be found at the following li
 - [AVR-Ex DFP-2.7.184 or newer Device Pack](https://packs.download.microchip.com/)
 - [MPLAB® XC8 compiler v2.45](https://www.microchip.com/en-us/tools-resources/develop/mplab-xc-compilers/downloads-documentation#XC8)
 - [MPLAB® Code Configurator (MCC) v 5.3.7](https://www.microchip.com/en-us/tools-resources/configure/mplab-code-configurator)
+- [MPLAB® Code Configurator (MCC) Melody Core v 2.6.2 or newer](https://www.microchip.com/en-us/tools-resources/configure/mplab-code-configurator)
 
 ## Hardware Used
 - [AVR<sup>®</sup> EB Curiosity Nano](https://www.microchip.com/en-us/product/AVR16EB32)
