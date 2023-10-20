@@ -1,22 +1,22 @@
 [![MCHP](../images/microchip.png)](https://www.microchip.com)
 
-## Use case 1: Generate Two Variable-Frequency Signals in NCO-Fixed Mode using the TCF
-
-Below is an example of how to set TCF to generate Two Variable-Frequency signals
+##  Generate Two Variable-Frequency Signals in NCO-Fixed Mode Using  the TCF
+The example shows how to set the TCF to generate Two Variable-Frequency signals, ranging from 10 Hz to 100 khz, with one magnitude step change. The TCF is operating in Numerically Controlled Oscillator (NCO) mode, and has an important advantage over classical Pulse-Width Modulation (PWM) control, as it offers liniar ferquency regulation.
 
 ## Related Documentation
 More details and code examples on the AVR16EB32 can be found at the following links:
 - [TBxxxx - Getting Started with Timer/Counter Type F (TCF)](insert url link here)
-- [AVR16EB32 Product Page](insert url link here)
+- [AVR16EB32 Product Page](https://www.microchip.com/en-us/product/AVR16EB32)
 - [AVR16EB32 Code Examples on GitHub](insert url link here)
 
 ## Software Used
 - [MPLAB X IDE v6.15 or newer](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide)
-- [AVR-Ex_DFP-2.5.184 or newer Device Pack](insert url link here)
-- [XC8 compiler v2.45]
+- [AVR-Ex DFP-2.5.184 or newer Device Pack](https://packs.download.microchip.com/)
+- [MPLAB XC8 compiler v2.45](https://www.microchip.com/en-us/tools-resources/develop/mplab-xc-compilers/downloads-documentation#XC8)
+- [MPLAB Code Configurator (MCC) v 5.3.7](https://www.microchip.com/en-us/tools-resources/configure/mplab-code-configurator)
 
 ## Hardware Used
-- AVR16EB32 Cnano [(AVR16EB32)](insert url link here)
+- [AVR16EB32 Curiosity Nano](https://www.microchip.com/en-us/product/AVR16EB32)
 
 ## Setup
 The AVR16EB32 Cnano Development Board is used as test platform.
