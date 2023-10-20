@@ -1,8 +1,8 @@
 [![MCHP](../images/microchip.png)](https://www.microchip.com)
 
-## Generate Two Two Constant On-Time PWM Signals in NCO-Pulse Length Mode using the TCF
+## Generate Two Constant On-Time PWM Signals in NCO-Pulse Length Mode Using the TCF
 
-The example shows how to set the TCF to generate Two Constant-On-Time PWM signals.
+The example shows how to set the TCF to generate two constant on-time PWM signals.
 
 ## Related Documentation
 More details and code examples on the AVR16EB32 can be found at the following links:
@@ -12,7 +12,7 @@ More details and code examples on the AVR16EB32 can be found at the following li
 
 ## Software Used
 - [MPLAB X IDE v6.15 or newer](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide)
-- [AVR-Ex DFP-2.5.184 or newer Device Pack](https://packs.download.microchip.com/)
+- [AVR-Ex DFP-2.7.184 or newer Device Pack](https://packs.download.microchip.com/)
 - [MPLAB XC8 compiler v2.45](https://www.microchip.com/en-us/tools-resources/develop/mplab-xc-compilers/downloads-documentation#XC8)
 - [MPLAB Code Configurator (MCC) v 5.3.7](https://www.microchip.com/en-us/tools-resources/configure/mplab-code-configurator)
 
@@ -98,13 +98,9 @@ void NCO_Pulse_Length_Demo(void)
 <br>To generate this project using MPLAB X IDE and the MPLAB Code Configurator (MCC Melody, MCC Clasic is not supported on this device), follow the next steps:
 
 <br>1. Open MPLAB® X IDE and create a new project for AVR16EB32 device.
-<br><img src="../images/fileNewProject.png">
-<br><img src="../images/selectDevice.png">
-<br><img src="../images/selectCompiler.png">
-<br><img src="../images/setProjectNamePL.png">
 
 
-<br>2. Open MCC from the toolbar (more information on how to install the MCC plug-in can be found at [(https://onlinedocs.microchip.com/pr/GUID-1F7007B8-9A46-4D03-AEED-650357BA760D-en-US-6/index.html?GUID-D98198EA-93B9-45D2-9D96-C97DBCA55267)](https://onlinedocs.microchip.com/pr/GUID-1F7007B8-9A46-4D03-AEED-650357BA760D-en-US-6/index.html?GUID-D98198EA-93B9-45D2-9D96-C97DBCA55267)).
+<br>2. Open MCC from the toolbar (more information on how to install the MCC plug-in can be found [here](https://onlinedocs.microchip.com/pr/GUID-1F7007B8-9A46-4D03-AEED-650357BA760D-en-US-6/index.html?GUID-D98198EA-93B9-45D2-9D96-C97DBCA55267).
 
 
 <br>3.  In MCC Content Manager Wizard select MCC Melody then select the Finish button.<br><img src="../images/addMCC.png">

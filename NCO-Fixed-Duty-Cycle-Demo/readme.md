@@ -11,7 +11,7 @@ More details and code examples on the AVR16EB32 can be found at the following li
 
 ## Software Used
 - [MPLAB X IDE v6.15 or newer](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide)
-- [AVR-Ex DFP-2.5.184 or newer Device Pack](https://packs.download.microchip.com/)
+- [AVR-Ex DFP-2.7.184 or newer Device Pack](https://packs.download.microchip.com/)
 - [MPLAB XC8 compiler v2.45](https://www.microchip.com/en-us/tools-resources/develop/mplab-xc-compilers/downloads-documentation#XC8)
 - [MPLAB Code Configurator (MCC) v 5.3.7](https://www.microchip.com/en-us/tools-resources/configure/mplab-code-configurator)
 
@@ -20,7 +20,7 @@ More details and code examples on the AVR16EB32 can be found at the following li
 
 ## Setup
 The AVR16EB32 Cnano Development Board is used as test platform.
-<br><img src="../images/AVR16EB32_Cnano_Board.svg">
+<br><img src="../images/AVR16EB32_Cnano_Board.png">
 
 ## Functionality
 After the peripheral clock and the TCF are initialized, the ```NCO_Fixed_DutyCycle_Demo``` function is called in an infinite loop.
@@ -76,13 +76,9 @@ void NCO_Fixed_DutyCycle_Demo(void)
 <br>To generate this project using MPLAB X IDE and the MPLAB Code Configurator (MCC Melody, MCC Clasic is not supported on this device), follow the next steps:
 
 <br>1. Open MPLAB® X IDE and create a new project for AVR16EB32 device.
-<br><img src="../images/fileNewProject.png">
-<br><img src="../images/selectDevice.png">
-<br><img src="../images/selectCompiler.png">
-<br><img src="../images/setPojectNameFDC.png">
 
 
-<br>2. Open MCC from the toolbar (more information on how to install the MCC plug-in can be found at [(https://onlinedocs.microchip.com/pr/GUID-1F7007B8-9A46-4D03-AEED-650357BA760D-en-US-6/index.html?GUID-D98198EA-93B9-45D2-9D96-C97DBCA55267)](https://onlinedocs.microchip.com/pr/GUID-1F7007B8-9A46-4D03-AEED-650357BA760D-en-US-6/index.html?GUID-D98198EA-93B9-45D2-9D96-C97DBCA55267)).
+<br>2. Open MCC from the toolbar (more information on how to install the MCC plug-in can be found [here](https://onlinedocs.microchip.com/pr/GUID-1F7007B8-9A46-4D03-AEED-650357BA760D-en-US-6/index.html?GUID-D98198EA-93B9-45D2-9D96-C97DBCA55267)).
 
 
 <br>3.  In MCC Content Manager Wizard select MCC Melody then select the Finish button.<br><img src="../images/addMCC.png">
@@ -143,10 +139,10 @@ void NCO_Fixed_DutyCycle_Demo(void)
 
 The logic analyzer captures shows how the TCF generates a waveform signal in NCO Fixed Duty Cycle (FDC) mode.
 
-<br>Result 1: two identical signals are generated with a frequency of 10Hz and duty-cycle of 50%.
+<br>Result 1: two identical signals are generated with a frequency of 10 Hz and duty-cycle of 50%.
 <br><img src="../images/10Hz.png">
 
-<br>Result 2: two identical signals are generated with a frequency of 100Hz and duty-cycle of 50%.
+<br>Result 2: two identical signals are generated with a frequency of 100 Hz and duty-cycle of 50%.
 <br><img src="../images/100Hz.png">
 
 <br>Result 3: two identical signals are generated with a frequency of 1 kHz and duty-cycle of 50%.
