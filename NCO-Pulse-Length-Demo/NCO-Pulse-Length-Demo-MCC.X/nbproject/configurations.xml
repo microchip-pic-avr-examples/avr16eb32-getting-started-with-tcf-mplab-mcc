@@ -67,6 +67,7 @@
                    projectFiles="false">
       <itemPath>Makefile</itemPath>
       <itemPath>NCO-Pulse.mc3</itemPath>
+      <itemPath>NCO-Pulse-Length-Demo-MCC.mc3</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
@@ -317,7 +318,7 @@
         <targetDevice>AVR16EB32</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>noID</platformTool>
+        <platformTool>nEdbgTool</platformTool>
         <languageToolchain>XC8</languageToolchain>
         <languageToolchainVersion>2.45</languageToolchainVersion>
         <platform>3</platform>

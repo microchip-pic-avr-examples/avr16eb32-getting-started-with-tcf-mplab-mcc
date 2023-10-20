@@ -35,25 +35,61 @@
 
 void NCO_Pulse_Length_Demo(void)
 {
-    TCF0_Start();
-    _delay_us(20);
-    TCF0_NCO_PulseLengthSet(TCF_WGPULSE_CLK2_gc);
-    _delay_us(20);
-    TCF0_NCO_PulseLengthSet(TCF_WGPULSE_CLK4_gc);
-    _delay_us(20);
-    TCF0_NCO_PulseLengthSet(TCF_WGPULSE_CLK8_gc);
-    _delay_us(20);
-    TCF0_NCO_PulseLengthSet(TCF_WGPULSE_CLK16_gc);
-    _delay_us(20);
-    TCF0_NCO_PulseLengthSet(TCF_WGPULSE_CLK32_gc);
-    _delay_us(20);
-    TCF0_NCO_PulseLengthSet(TCF_WGPULSE_CLK64_gc);
-    _delay_us(20);
-    TCF0_NCO_PulseLengthSet(TCF_WGPULSE_CLK128_gc);
-    _delay_us(18);
-    TCF0_Stop();
-    TCF0_NCO_PulseLengthSet(TCF_WGPULSE_CLK1_gc);  
+  /* Enable the TCF */
+    TCF0_Start(); 
+    
+    /* Delay for 20 us */
+   _delay_us(20);
+   
+   /* Configure the pulse-length to 2 clock cycles */
+   TCF0_NCO_PulseLengthSet(TCF_WGPULSE_CLK2_gc);
+   
+   /* Delay for 20 us */
+   _delay_us(20);
+   
+   /* Configure the pulse-length to 4 clock cycles */
+   TCF0_NCO_PulseLengthSet(TCF_WGPULSE_CLK4_gc);
+   
+   /* Delay for 20 us */
+   _delay_us(20);
+   
+   /* Configure the pulse-length to 8 clock cycles */
+   TCF0_NCO_PulseLengthSet(TCF_WGPULSE_CLK8_gc);
+   
+   /* Delay for 20 us */
+   _delay_us(20);
+   
+   /* Configure the pulse-length to 6 clock cycles */
+   TCF0_NCO_PulseLengthSet(TCF_WGPULSE_CLK16_gc);
+   
+   /* Delay for 20 us */
+   _delay_us(20);
+   
+   /* Configure the pulse-length to 32 clock cycles */
+   TCF0_NCO_PulseLengthSet(TCF_WGPULSE_CLK32_gc);
+   
+   /* Delay for 20 us */
+   _delay_us(20);
+   
+   /* Configure the pulse-length to 64 clock cycles */
+   TCF0_NCO_PulseLengthSet(TCF_WGPULSE_CLK64_gc);
+   
+   /* Delay for 20 us */
+   _delay_us(20);
+   
+   /* Configure the pulse-length to 128 clock cycles */
+   TCF0_NCO_PulseLengthSet(TCF_WGPULSE_CLK128_gc);
+   
+   /* Delay for 20 us */
+   _delay_us(18);
+   
+   /* Stop the timer */
+   TCF0_Stop();
+   
+   /* Configure the pulse-length to 1 clock cycle */
+   TCF0_NCO_PulseLengthSet(TCF_WGPULSE_CLK1_gc);
 }
+
 
 int main(void)
 {

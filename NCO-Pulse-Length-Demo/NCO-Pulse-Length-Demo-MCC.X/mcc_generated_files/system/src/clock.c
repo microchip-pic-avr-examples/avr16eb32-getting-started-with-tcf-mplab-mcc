@@ -39,7 +39,7 @@ void CLOCK_Initialize(void)
     
     //CLKOUT disabled; CLKSEL Internal high-frequency oscillator; 
     ccp_write_io((void*)&(CLKCTRL.MCLKCTRLA),0x0);
-    //PDIV Divide by 6; PDIVB No division; PEN disabled; 
+    //PDIV Divide by 6; PEN disabled; 
     ccp_write_io((void*)&(CLKCTRL.MCLKCTRLB),0x10);
     //
     ccp_write_io((void*)&(CLKCTRL.MCLKSTATUS),0x0);

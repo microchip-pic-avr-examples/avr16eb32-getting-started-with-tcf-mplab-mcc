@@ -35,17 +35,40 @@
 
 void NCO_Fixed_DutyCycle_Demo(void)
 {   
-   TCF0_Start();
+    /* Enable the TCF */
+    TCF0_Start();
+    
+    /* Delay for 600 ms */
    _delay_ms(600);
+   
+   /* Load the CMP register with a frequency of 100 Hz */
    TCF0_CompareSet(TCF0_NCOFD_HZ_TO_INCREMENT(100, 20000000, 1));
+   
+    /* Delay for 60 ms */
    _delay_ms(60);
+   
+   /* Load the CMP register with a frequency of 1 KHz */
    TCF0_CompareSet(TCF0_NCOFD_HZ_TO_INCREMENT(1000, 20000000, 1));
+   
+    /* Delay for 6 ms */
    _delay_ms(6);
+   
+   /* Load the CMP register with a frequency of 10 KHz */
    TCF0_CompareSet(TCF0_NCOFD_HZ_TO_INCREMENT(10000, 20000000, 1));
+   
+    /* Delay for 600 us */
    _delay_us(600);
+   
+   /* Load the CMP register with a frequency of 100 KHz */
    TCF0_CompareSet(TCF0_NCOFD_HZ_TO_INCREMENT(100000, 20000000, 1));
+   
+    /* Delay for 60 us */
    _delay_us(60);
+   
+    /* Stop the TCF */
    TCF0_Stop();
+   
+   /* Load the CMP register with a frequency of 10 Hz */
    TCF0_CompareSet(TCF0_NCOFD_HZ_TO_INCREMENT(10, 20000000, 1));
 }
 

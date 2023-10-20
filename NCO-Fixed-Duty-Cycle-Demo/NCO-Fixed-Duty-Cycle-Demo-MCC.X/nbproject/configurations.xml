@@ -67,6 +67,7 @@
                    projectFiles="false">
       <itemPath>Makefile</itemPath>
       <itemPath>NCO-Fixed.mc3</itemPath>
+      <itemPath>NCO-Fixed-Duty-Cycle-Demo-MCC.mc3</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
