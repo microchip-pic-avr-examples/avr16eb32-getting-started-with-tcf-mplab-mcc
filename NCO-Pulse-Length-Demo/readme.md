@@ -6,7 +6,6 @@ The example shows how to set the TCF to generate two Constant-On-Time PWM signal
 
 ## Related Documentation
 More details and code examples on the AVR16EB32 can be found at the following links:
-- [TBxxxx - Getting Started with Timer/Counter Type F (TCF)](insert url link here)
 - [AVR<sup>®</sup> EB Product Page](https://www.microchip.com/en-us/product/AVR16EB32)
 - [AVR<sup>®</sup> EB Code Examples on GitHub](insert url link here)
 
@@ -81,7 +80,7 @@ void NCO_Pulse_Length_Demo(void)
    /* Configure the pulse-length to 128 clock cycles */
    TCF0_NCO_PulseLengthSet(TCF_WGPULSE_CLK128_gc);
    
-   /* Delay for 20 us */
+   /* Delay for 18 us */
    _delay_us(18);
    
    /* Stop the timer */

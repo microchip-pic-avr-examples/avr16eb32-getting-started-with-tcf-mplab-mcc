@@ -2,7 +2,7 @@
 
 # Getting Started with Timer/Counter Type F (TCF)
 
-This repository contains examples of MCC Melody generated source code for the new TCF of the AVR<sup>®</sup> EB' family of devices as described in TBxxxx. This example provides two application examples, along with their functionalities.
+This repository contains examples of MCC Melody generated source code for the new TCF of the AVR<sup>®</sup> EB' family of devices. This example provides two application examples, along with their functionalities.
 
  * [<strong>Generate Two Constant On-Time PWM Signals in NCO Pulse-Frequency Waveform Generation Mode using the TCF:</strong>](./NCO-Pulse-Length-Demo/readme.md) In this use case, the TCF is configured to generate an overflow event on the compare registers at a fixed frequency while increasing the waveform duty cycle, through all possible lengths.
   * [<strong>Generate Two Variable-Frequency Signals in NCO-Fixed Mode using the TCF:</strong>](./NCO-Fixed-Duty-Cycle/readme.md) In this case, the TCF is configured to generate an overflow event on the compare registers on a range of frequencies (from 10 Hz to 100 KHz).
@@ -10,7 +10,6 @@ This repository contains examples of MCC Melody generated source code for the ne
 
 ## Related Documentation
 More details and code examples on the AVR16EB32 can be found at the following links:
-- [TBxxxx - Getting Started with Timer/Counter Type F (TCF)](insert url link here)
 - [AVR<sup>®</sup> EB Product Page](https://www.microchip.com/en-us/product/AVR16EB32)
 - [AVR<sup>®</sup> EB Code Examples on GitHub](insert url link here)
 
