@@ -2,7 +2,7 @@
 
 ## Generate Two Constant On-Time PWM Signals in NCO-Pulse Length Mode Using the TCF
 
-The example shows how to set the TCF to generate two constant on-time PWM signals.
+The example shows how to set the TCF to generate two Constant-On-Time PWM signals.
 
 ## Related Documentation
 More details and code examples on the AVR16EB32 can be found at the following links:
@@ -20,7 +20,7 @@ More details and code examples on the AVR16EB32 can be found at the following li
 - [AVR<sup>®</sup> EB Curiosity Nano](https://www.microchip.com/en-us/product/AVR16EB32)
 
 ## Setup
-The AVR16EB32 Cnano Development Board is used as test platform.
+The AVR16EB32 Curiosity Nano Development Board is used as test platform.
 <br><img src="../images/AVR16EB32_Cnano_Board.png">
 
 ## Functionality
@@ -28,9 +28,9 @@ After  the peripheral clock and the TCF are initialized, the ```NCO_Pulse_Length
 
 The purpose of this function is to change the pulse length of the waveform which the timer outputs on the pin. The timer is started with a pulse length of 2 clock cycles and then run up to the maximum of 128 clock cycles. 
 
-1 clock cycle takes 50 ns beacuse the timer is running at 20 MHz. 1 divided by 20 Mhz equals 50 ns.
+1 clock cycle takes 50 ns beacuse the timer is running at 20 MHz. 1 divided by 20 MHz equals 50 ns.
 
-At the end the timer is stopped and the pulse length is reseted to 1 clock cycle.
+At the end the timer is stopped and the pulse length is reset to 1 clock cycle.
 
 ```
 void NCO_Pulse_Length_Demo(void)
@@ -95,9 +95,9 @@ void NCO_Pulse_Length_Demo(void)
 
 
 
-<br>To generate this project using MPLAB X IDE and the MPLAB Code Configurator (MCC Melody, MCC Clasic is not supported on this device), follow the next steps:
+<br>To generate this project using MPLAB® X IDE and the MPLAB® Code Configurator (MCC Melody, MCC Clasic is not supported on this device), follow the next steps:
 
-<br>1. Open MPLAB® X IDE and create a new project for AVR16EB32 device.
+<br>1. Open MPLAB X IDE and create a new project for AVR16EB32 device.
 
 
 <br>2. Open MCC from the toolbar (more information on how to install the MCC plug-in can be found [here](https://onlinedocs.microchip.com/pr/GUID-1F7007B8-9A46-4D03-AEED-650357BA760D-en-US-6/index.html?GUID-D98198EA-93B9-45D2-9D96-C97DBCA55267).
@@ -107,7 +107,7 @@ void NCO_Pulse_Length_Demo(void)
 <br><img src="../images/selectMCCMelody.png">
 <br><img src="../images/mccFinish.png">
 
-<br>4.  Go to Project Resources, click System then click CLKCTRL and disable the Prescaler enable button.
+<br>4.  Go to Project Resources, click System then click CLKCTRL and disable the Prescaler Enable button.
 <br><img src="../images/selectCLKCTRL.png">
 <br><img src="../images/disablePrescaler.png">
 

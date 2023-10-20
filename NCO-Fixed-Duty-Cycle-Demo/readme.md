@@ -1,7 +1,7 @@
 [![MCHP](../images/microchip.png)](https://www.microchip.com)
 
-##  Generate Two Variable-Frequency Signals in NCO-Fixed Mode Using  the TCF
-The example shows how to set the TCF to generate Two Variable-Frequency signals, ranging from 10 Hz to 100 khz, with one magnitude step change. The TCF is operating in Numerically Controlled Oscillator (NCO) mode, and has an important advantage over classical Pulse-Width Modulation (PWM) control, as it offers liniar ferquency regulation.
+## Generate Two Variable-Frequency Signals in NCO-Fixed Mode Using the TCF
+The example shows how to set the TCF to generate two Variable-Frequency signals, ranging from 10 Hz to 100 khz, with one magnitude step change. The TCF is operating in Numerically Controlled Oscillator (NCO) mode, and has an important advantage over classical Pulse-Width Modulation (PWM) control, as it offers liniar ferquency regulation.
 
 ## Related Documentation
 More details and code examples on the AVR16EB32 can be found at the following links:
@@ -19,7 +19,7 @@ More details and code examples on the AVR16EB32 can be found at the following li
 - [AVR<sup>®</sup> EB Curiosity Nano](https://www.microchip.com/en-us/product/AVR16EB32)
 
 ## Setup
-The AVR16EB32 Cnano Development Board is used as test platform.
+The AVR16EB32 Curiosity Nano Development Board is used as a test platform.
 <br><img src="../images/AVR16EB32_Cnano_Board.png">
 
 ## Functionality
@@ -27,7 +27,7 @@ After the peripheral clock and the TCF are initialized, the ```NCO_Fixed_DutyCyc
 
 The purpose of this function is to change the frequency at which the timer operates. The timer is started with a frequency of 10 Hz and run up until it reaches 100 KHz.
 
-At the end the timer is stopped and the frequency is reseted to 10 Hz.
+At the end, the timer is stopped and the frequency is reset to 10 Hz.
 
 ```
 void NCO_Fixed_DutyCycle_Demo(void)
@@ -73,9 +73,9 @@ void NCO_Fixed_DutyCycle_Demo(void)
 <br><img src="../images/ncoFixedDutyCycleFlowchart.png">
 
 
-<br>To generate this project using MPLAB X IDE and the MPLAB Code Configurator (MCC Melody, MCC Clasic is not supported on this device), follow the next steps:
+<br>To generate this project using MPLAB® X IDE and the MPLAB® X Code Configurator (MCC Melody, MCC Clasic is not supported on this device), follow the next steps:
 
-<br>1. Open MPLAB® X IDE and create a new project for AVR16EB32 device.
+<br>1. Open MPLAB X IDE and create a new project for AVR16EB32 device.
 
 
 <br>2. Open MCC from the toolbar (more information on how to install the MCC plug-in can be found [here](https://onlinedocs.microchip.com/pr/GUID-1F7007B8-9A46-4D03-AEED-650357BA760D-en-US-6/index.html?GUID-D98198EA-93B9-45D2-9D96-C97DBCA55267)).
@@ -85,7 +85,7 @@ void NCO_Fixed_DutyCycle_Demo(void)
 <br><img src="../images/selectMCCMelody.png">
 <br><img src="../images/mccFinish.png">
 
-<br>4.  Go to Project Resources, click System then click CLKCTRL and disable the Prescaler enable button.
+<br>4.  Go to Project Resources, click System then click CLKCTRL and disable the Prescaler Enable button.
 <br><img src="../images/selectCLKCTRL.png">
 <br><img src="../images/disablePrescaler.png">
 
@@ -137,25 +137,25 @@ void NCO_Fixed_DutyCycle_Demo(void)
 
 ## Results
 
-The logic analyzer captures shows how the TCF generates a waveform signal in NCO Fixed Duty Cycle (FDC) mode.
+The logic analyzer captures show how the TCF generates a waveform signal in NCO Fixed Duty Cycle (FDC) mode.
 
-<br>Result 1: two identical signals are generated with a frequency of 10 Hz and duty-cycle of 50%.
+<br>Result 1: two identical signals are generated with a frequency of 10 Hz and duty cycle of 50%.
 <br><img src="../images/10Hz.png">
 
-<br>Result 2: two identical signals are generated with a frequency of 100 Hz and duty-cycle of 50%.
+<br>Result 2: two identical signals are generated with a frequency of 100 Hz and duty cycle of 50%.
 <br><img src="../images/100Hz.png">
 
-<br>Result 3: two identical signals are generated with a frequency of 1 kHz and duty-cycle of 50%.
+<br>Result 3: two identical signals are generated with a frequency of 1 kHz and duty cycle of 50%.
 <br><img src="../images/1KHz.png">
 
-<br>Result 4: two identical signals are generated with a frequency of 10 kHz and duty-cycle of 50%.
+<br>Result 4: two identical signals are generated with a frequency of 10 kHz and duty cycle of 50%.
 <br><img src="../images/10KHz.png">
 
-<br>Result 5: two identical signals are generated with a frequency of 100 kHz and duty-cycle of 50%.
+<br>Result 5: two identical signals are generated with a frequency of 100 kHz and duty cycle of 50%.
 <br><img src="../images/100KHz.png">
 
 
 
 ## Summary
 
-This example depicted how to create a project in MCC using the TCF peripheral of AVR16EB32. The TCF was configured to generate two PWM output signals on the default TCF output pins(PA0 and PA1). The PWM sequence changes the frequency from 10 Hz to 100 KHz with one magnitude step maintaining 50% duty cycle. The measured output confirms the expected result.
+This example depicted how to create a project in MCC using the TCF peripheral of AVR16EB32. The TCF was configured to generate two PWM output signals on the default TCF output pins (PA0 and PA1). The PWM sequence changes the frequency from 10 Hz to 100 KHz with one magnitude step maintaining 50% duty cycle. The measured output confirms the expected result.
