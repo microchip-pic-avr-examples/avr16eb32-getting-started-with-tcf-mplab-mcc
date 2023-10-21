@@ -80,8 +80,8 @@ void NCO_Pulse_Length_Demo(void)
    /* Configure the pulse-length to 128 clock cycles */
    TCF0_NCO_PulseLengthSet(TCF_WGPULSE_CLK128_gc);
    
-   /* Delay for 18 us */
-   _delay_us(18);
+   /* Delay for 27 us */
+   _delay_us(27);
    
    /* Stop the timer */
    TCF0_Stop();

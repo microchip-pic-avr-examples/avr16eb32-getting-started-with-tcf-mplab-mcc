@@ -7,7 +7,7 @@
         "version": "1.0.0",
         "displayName": "Getting Started with Timer/Counter Type F (TCF)",
         "projectName": "avr16eb32-getting-started-with-tcf-mplab-mcc",
-        "shortDescription": "This repository has examples of the MCC Melody generated source code for the new AVR EB family's TCF.",
+        "shortDescription": "This repository has examples of MCC Melody generated source code for the new AVR EB family's TCF.",
         "ide": {
             "name": "MPLAB X",
             "semverRange": ">=6.15.0"
