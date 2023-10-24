@@ -6,7 +6,7 @@ The example shows how to set the TCF to generate two Variable-Frequency signals,
 ## Related Documentation
 More details and code examples on the AVR16EB32 can be found at the following links:
 - [AVR<sup>®</sup> EB Product Page](https://www.microchip.com/en-us/product/AVR16EB32)
-- [AVR<sup>®</sup> EB Code Examples on GitHub](insert url link here)
+- [AVR<sup>®</sup> EB Code Examples on GitHub](https://github.com/microchip-pic-avr-examples?q=AVR16EB32)
 
 ## Software Used
 - [MPLAB® X IDE v6.15 or newer](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide)
