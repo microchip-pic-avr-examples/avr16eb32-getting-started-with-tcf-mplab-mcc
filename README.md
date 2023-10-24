@@ -5,13 +5,13 @@
 This repository contains examples of MCC Melody generated source code for the new TCF of the AVR<sup>®</sup> EB' family of devices. This example provides two application examples, along with their functionalities.
 
  * [<strong>Generate Two Constant On-Time PWM Signals in NCO Pulse-Frequency Waveform Generation Mode using the TCF:</strong>](./NCO-Pulse-Length-Demo) In this use case, the TCF is configured to generate an overflow event on the compare registers at a fixed frequency while increasing the waveform duty cycle, through all possible lengths.
-  * [<strong>Generate Two Variable-Frequency Signals in NCO-Fixed Mode using the TCF:</strong>](./NCO-Fixed-Duty-Cycle-Demo) In this case, the TCF is configured to generate an overflow event on the compare registers on a range of frequencies (from 10 Hz to 100 KHz).
+  * [<strong>Generate Two Variable-Frequency Signals in NCO-Fixed Mode using the TCF:</strong>](./NCO-Fixed-Duty-Cycle-Demo) In this use case, the TCF is configured to generate an overflow event on the compare registers on a range of frequencies (from 10 Hz to 100 KHz).
  
 
 ## Related Documentation
 More details and code examples on the AVR16EB32 can be found at the following links:
 - [AVR<sup>®</sup> EB Product Page](https://www.microchip.com/en-us/product/AVR16EB32)
-- [AVR<sup>®</sup> EB Code Examples on GitHub](insert url link here)
+- [AVR<sup>®</sup> EB Code Examples on GitHub](https://github.com/microchip-pic-avr-examples/avr16eb32-getting-started-with-tcf-mplab-mcc)
 
 ## Software Used
 - [MPLAB® X IDE v6.15 or newer](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide)
