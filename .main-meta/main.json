@@ -37,12 +37,19 @@
             }
         },
         "author": "Bogdan-Alexandru Mariniuc",
-        "peripherals": ["Timer"],
+        "peripherals": ["Timer/Counter type F"],
         "keywords": [
             "Getting Started",
             "MCC",
             "Timer",
-            "NCO"
+            "TCF",
+            "NCO",
+            "Numerically Controlled Oscillator",
+            "PWM",
+            "Pulse Width Modulator",
+            "Timing Module",
+            "PWM Controller",
+            "Signal Generation"
     ],
         "additionalData": {
             "longDescription": {
