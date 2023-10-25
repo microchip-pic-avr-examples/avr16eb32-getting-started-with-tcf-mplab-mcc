@@ -161,7 +161,7 @@ void NCO_Pulse_Length_Demo(void)
 
 The logic analyzer capture show how the TCF generates a waveform signal NCO Pulse-Length mode.
 
-<br>Result: TCF is used to generate two pulse-wdth-modulated output signals with a frequency of 125 kHz and with a variable duration ranging from 1 clock cycle up to 128 clock cycles.
+<br>Result: TCF is used to generate two pulse-width-modulated output signals with a frequency of 125 kHz and with a variable duration ranging from 1 clock cycle up to 128 clock cycles.
 
 <br><img src="../images/ncoPlResult.png">
 
