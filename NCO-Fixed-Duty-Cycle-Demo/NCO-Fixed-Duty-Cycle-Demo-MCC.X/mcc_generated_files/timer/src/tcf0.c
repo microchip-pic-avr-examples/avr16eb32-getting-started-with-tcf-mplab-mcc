@@ -444,10 +444,6 @@ void TCF0_CompareSet(uint32_t value)
         {
             TCF0.CMP = value;
         }
-        TCF0_WaitWhile_CTRLD_IsBusy();
-        TCF0.CTRLD = TCF_CMD_RESTART_gc;
-        TCF0_WaitWhile_CTRLD_IsBusy();
-        TCF0.CTRLD = TCF_CMD_UPDATE_gc;
     }
 }
 
